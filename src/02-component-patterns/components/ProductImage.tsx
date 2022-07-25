@@ -3,7 +3,11 @@ import { ProductContext } from './ProductCard'
 import noImage from '../assets/no-image.jpg'
 import styles from '../styles/styles.module.css'
 
-export const ProductImage = ({ img = '' }: { img?: string }) => {
+export interface Props extends BaseStyledHOC {
+  img?: string
+}
+
+export const ProductImage = ({ img = '', className, style }: Props) => {
   const { product } = useContext(ProductContext)
   let imgToShow = noImage
   if (img) {
@@ -12,5 +16,5 @@ export const ProductImage = ({ img = '' }: { img?: string }) => {
     imgToShow = product.img
   }
 
-  return <img className={styles.productImg} src={imgToShow} alt='Product' />
+  return <img style={style} className={`${styles.productImg} ${className}`} src={imgToShow} alt='Product' />
 }

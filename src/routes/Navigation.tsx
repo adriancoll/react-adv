@@ -13,7 +13,7 @@ import { Suspense } from "react";
 
 export const Navigation = () => {
   return (
-    <Suspense fallback={null} >
+    <Suspense fallback={<h1>Loading...</h1>} >
       <Router>
         <div className="main-layout">
           <nav>

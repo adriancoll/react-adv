@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { ProductContext } from './ProductCard';
-import styles from '../styles/styles.module.css';
+import { useContext } from 'react'
+import { ProductContext } from './ProductCard'
+import styles from '../styles/styles.module.css'
 
 export const ProductButtons = () => {
-  const { counter, increaseBy } = useContext(ProductContext);
+  const { counter, increaseBy } = useContext(ProductContext)
 
   return (
     <div className={styles.buttonsContainer}>
@@ -15,5 +15,5 @@ export const ProductButtons = () => {
         +
       </button>
     </div>
-  );
-};
+  )
+}

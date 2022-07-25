@@ -1,13 +1,12 @@
-import { Product } from '../interface/interfaces';
+import { Product } from '../interface/interfaces'
 
-import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../components';
-
+import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../components'
 
 const product: Product = {
   id: '1',
   title: 'Coffee mug - card',
   img: './coffee-mug.png',
-};
+}
 
 export const ShoppingPage = () => {
   return (
@@ -28,7 +27,6 @@ export const ShoppingPage = () => {
           <ProductCard.Buttons />
         </ProductCard>
 
-        
         <ProductCard product={product}>
           <ProductImage img={product.img} />
           <ProductTitle title={product.title} />
@@ -36,5 +34,5 @@ export const ShoppingPage = () => {
         </ProductCard>
       </div>
     </div>
-  );
-};
+  )
+}

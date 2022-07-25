@@ -4,8 +4,8 @@ import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../comp
 
 
 const product: Product = {
-  id: '0asd',
-  title: 'asdasd',
+  id: '1',
+  title: 'Coffee mug - card',
   img: './coffee-mug.png',
 };
 

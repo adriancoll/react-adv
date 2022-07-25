@@ -2,9 +2,6 @@ import { useContext } from 'react'
 import { ProductContext } from './ProductCard'
 import styles from '../styles/styles.module.css'
 
-export interface Props extends BaseStyledHOC  {
-  [x: string]: any
-}
 
 export const ProductButtons = ({ className, style }: BaseStyledHOC) => {
   const { counter, increaseBy } = useContext(ProductContext)
